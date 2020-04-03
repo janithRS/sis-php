@@ -109,7 +109,7 @@ class BakeHelper extends Helper
     public function aliasExtractor($table, $assoc)
     {
         $extractor = function ($val) {
-            return $val->getTarget()->getAlias();
+            return $val->target()->alias();
         };
         $aliases = array_map($extractor, $table->associations()->type($assoc));
         if ($assoc === 'HasMany') {

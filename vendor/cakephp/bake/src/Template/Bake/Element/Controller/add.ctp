@@ -18,13 +18,13 @@ $compact = ["'" . $singularName . "'"];
     /**
      * Add method
      *
-     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
+     * @return \Cake\Network\Response|null Redirects on successful add, renders view otherwise.
      */
     public function add()
     {
         $<%= $singularName %> = $this-><%= $currentModelName %>->newEntity();
         if ($this->request->is('post')) {
-            $<%= $singularName %> = $this-><%= $currentModelName %>->patchEntity($<%= $singularName %>, $this->request->getData());
+            $<%= $singularName %> = $this-><%= $currentModelName %>->patchEntity($<%= $singularName %>, $this->request->data);
             if ($this-><%= $currentModelName; %>->save($<%= $singularName %>)) {
                 $this->Flash->success(__('The <%= strtolower($singularHumanName) %> has been saved.'));
 
@@ -39,7 +39,7 @@ $compact = ["'" . $singularName . "'"];
         );
         foreach ($associations as $assoc):
             $association = $modelObj->association($assoc);
-            $otherName = $association->getTarget()->getAlias();
+            $otherName = $association->target()->alias();
             $otherPlural = $this->_variableName($otherName);
 %>
         $<%= $otherPlural %> = $this-><%= $currentModelName %>-><%= $otherName %>->find('list', ['limit' => 200]);

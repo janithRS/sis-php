@@ -17,7 +17,7 @@
     /**
      * Logout method
      *
-     * @return \Cake\Http\Response
+     * @return \Cake\Network\Response
      */
     public function logout()
     {

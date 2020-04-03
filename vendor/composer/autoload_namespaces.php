@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
+    'Aura\\Intl' => array($vendorDir . '/aura/intl/src'),
+    'Aura\\Composer\\' => array($vendorDir . '/aura/installer-default/src'),
 );

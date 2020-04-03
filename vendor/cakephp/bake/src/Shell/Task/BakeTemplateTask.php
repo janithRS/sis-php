@@ -16,6 +16,7 @@ namespace Bake\Shell\Task;
 
 use Bake\View\BakeView;
 use Cake\Console\Shell;
+use Cake\Core\Configure;
 use Cake\Core\ConventionsTrait;
 use Cake\Event\Event;
 use Cake\Event\EventManager;
@@ -36,7 +37,7 @@ class BakeTemplateTask extends Shell
     /**
      * BakeView instance
      *
-     * @var \Bake\View\BakeView
+     * @var Cake\View\BakeView
      */
     public $View;
 

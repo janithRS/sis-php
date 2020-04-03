@@ -17,7 +17,7 @@
     /**
      * Index method
      *
-     * @return \Cake\Http\Response|void
+     * @return \Cake\Network\Response|null
      */
     public function index()
     {

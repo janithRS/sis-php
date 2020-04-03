@@ -19,10 +19,11 @@ $namespace = str_replace('\\', '\\\\', $namespace);
     "description": "<%= $plugin %> plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
-        "cakephp/cakephp": "^3.4"
+        "php": ">=5.5.9",
+        "cakephp/cakephp": ">=3.3.2 <4.0.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7|^6.0"
+        "phpunit/phpunit": "*"
     },
     "autoload": {
         "psr-4": {

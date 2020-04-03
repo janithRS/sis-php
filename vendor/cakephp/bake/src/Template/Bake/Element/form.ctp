@@ -19,7 +19,7 @@ $fields = collection($fields)
         return $schema->columnType($field) !== 'binary';
     });
 
-if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
+if (isset($modelObject) && $modelObject->behaviors()->has('Tree')) {
     $fields = $fields->reject(function ($field) {
         return $field === 'lft' || $field === 'rght';
     });
@@ -67,11 +67,11 @@ if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
                 $fieldData = $schema->column($field);
                 if (!empty($fieldData['null'])) {
 %>
-            echo $this->Form->control('<%= $field %>', ['options' => $<%= $keyFields[$field] %>, 'empty' => true]);
+            echo $this->Form->input('<%= $field %>', ['options' => $<%= $keyFields[$field] %>, 'empty' => true]);
 <%
                 } else {
 %>
-            echo $this->Form->control('<%= $field %>', ['options' => $<%= $keyFields[$field] %>]);
+            echo $this->Form->input('<%= $field %>', ['options' => $<%= $keyFields[$field] %>]);
 <%
                 }
                 continue;
@@ -80,11 +80,11 @@ if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
                 $fieldData = $schema->column($field);
                 if (in_array($fieldData['type'], ['date', 'datetime', 'time']) && (!empty($fieldData['null']))) {
 %>
-            echo $this->Form->control('<%= $field %>', ['empty' => true]);
+            echo $this->Form->input('<%= $field %>', ['empty' => true]);
 <%
                 } else {
 %>
-            echo $this->Form->control('<%= $field %>');
+            echo $this->Form->input('<%= $field %>');
 <%
                 }
             }
@@ -92,7 +92,7 @@ if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
         if (!empty($associations['BelongsToMany'])) {
             foreach ($associations['BelongsToMany'] as $assocName => $assocData) {
 %>
-            echo $this->Form->control('<%= $assocData['property'] %>._ids', ['options' => $<%= $assocData['variable'] %>]);
+            echo $this->Form->input('<%= $assocData['property'] %>._ids', ['options' => $<%= $assocData['variable'] %>]);
 <%
             }
         }

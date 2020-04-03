@@ -17,7 +17,7 @@
     /**
      * Login method
      *
-     * @return \Cake\Http\Response|null
+     * @return \Cake\Network\Response|null
      */
     public function login()
     {

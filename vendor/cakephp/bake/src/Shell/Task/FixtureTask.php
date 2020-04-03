@@ -64,7 +64,7 @@ class FixtureTask extends BakeTask
     {
         $parser = parent::getOptionParser();
 
-        $parser = $parser->setDescription(
+        $parser = $parser->description(
             'Generate fixtures for use with the test suite. You can use `bake fixture all` to bake all fixtures.'
         )->addArgument('name', [
             'help' => 'Name of the fixture to bake (without the `Fixture` suffix). ' .
@@ -437,7 +437,7 @@ class FixtureTask extends BakeTask
         $records = $model->find('all')
             ->where($conditions)
             ->limit($recordCount)
-            ->enableHydration(false);
+            ->hydrate(false);
 
         return $records;
     }

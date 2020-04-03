@@ -44,10 +44,15 @@
         </listener>
     </listeners>
 
+    <!-- Prevent coverage reports from looking in tests and vendors -->
     <filter>
-        <whitelist>
-            <directory suffix=".php">./src/</directory>
-        </whitelist>
+        <blacklist>
+            <directory suffix=".php">./vendor/</directory>
+            <directory suffix=".ctp">./vendor/</directory>
+
+            <directory suffix=".php">./tests/</directory>
+            <directory suffix=".ctp">./tests/</directory>
+        </blacklist>
     </filter>
 
 </phpunit>
