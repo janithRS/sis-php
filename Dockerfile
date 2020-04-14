@@ -8,6 +8,8 @@ RUN apt-get update  && apt-get install -y \
         libfreetype6-dev \
         autoconf \
         ruby \
+        zip \
+        libzip-dev \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
         libpng-dev \
@@ -16,6 +18,8 @@ RUN apt-get update  && apt-get install -y \
         libzip-dev \
         libonig-dev \
         graphviz \
+        re2c \
+        file
 
     && docker-php-ext-configure gd \
     && docker-php-ext-install -j$(nproc) gd \
@@ -23,6 +27,7 @@ RUN apt-get update  && apt-get install -y \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install zip \
+    && docker-php-ext-configure gmp && docker-php-ext-install gmp \
     && docker-php-source delete
 
 
@@ -50,7 +55,7 @@ RUN a2enmod rewrite && \
 
 # Clone your application (cloning CakePHP 3 / app instead of composer create project to demonstrate application deployment example)
 RUN rm -rf /var/www/apachephp
-ADD ./app /var/www/apachephp
+ADD ./ /var/www/apachephp
 WORKDIR /var/www/apachephp
 RUN mkdir -p \
     tmp/cache/models \
