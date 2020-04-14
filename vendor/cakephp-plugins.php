@@ -31,14 +31,18 @@ return [
         'OAuth' => $baseDir . '/plugins/OAuth/',
         'OpenEmis' => $baseDir . '/plugins/OpenEmis/',
         'Outcome' => $baseDir . '/plugins/Outcome/',
+        'Page' => $baseDir . '/vendor/korditpteltd/kd-cakephp-page/',
         'Profile' => $baseDir . '/plugins/Profile/',
         'Rest' => $baseDir . '/plugins/Rest/',
+        'Restful' => $baseDir . '/vendor/korditpteltd/kd-cakephp-restful/',
         'Scholarship' => $baseDir . '/plugins/Scholarship/',
         'Security' => $baseDir . '/plugins/Security/',
         'Staff' => $baseDir . '/plugins/Staff/',
         'Student' => $baseDir . '/plugins/Student/',
         'System' => $baseDir . '/plugins/System/',
         'User' => $baseDir . '/plugins/User/',
-        'Workflow' => $baseDir . '/plugins/Workflow/'
+        'Webhook' => $baseDir . '/vendor/korditpteltd/kd-cakephp-webhooks/',
+        'Workflow' => $baseDir . '/plugins/Workflow/',
+        'WyriHaximus/TwigView' => $baseDir . '/vendor/wyrihaximus/twig-view/'
     ]
 ];

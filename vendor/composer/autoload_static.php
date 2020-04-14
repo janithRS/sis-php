@@ -85,7 +85,13 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         ),
         'W' => 
         array (
+            'WyriHaximus\\TwigView\\' => 21,
             'Webmozart\\Assert\\' => 17,
+            'Webhook\\' => 8,
+        ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
         ),
         'S' => 
         array (
@@ -103,6 +109,11 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
             'Seld\\PharUtils\\' => 15,
             'Seld\\JsonLint\\' => 14,
         ),
+        'R' => 
+        array (
+            'Restful\\Test\\Fixture\\' => 21,
+            'Restful\\' => 8,
+        ),
         'P' => 
         array (
             'Psy\\' => 4,
@@ -113,6 +124,7 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
             'PhpParser\\' => 10,
             'PhpOffice\\PhpSpreadsheet\\' => 25,
             'Phinx\\' => 6,
+            'Page\\' => 5,
         ),
         'O' => 
         array (
@@ -126,6 +138,7 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         'J' => 
         array (
             'JsonSchema\\' => 11,
+            'Jasny\\Twig\\' => 11,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -161,9 +174,10 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         ),
         'A' => 
         array (
-            'Aura\\Intl\\_Config\\' => 18,
+            'Aura\\Intl\\' => 10,
             'App\\Test\\' => 9,
             'App\\' => 4,
+            'Ajgl\\Twig\\Extension\\' => 20,
             'ADmad\\JwtAuth\\' => 14,
         ),
     );
@@ -183,9 +197,21 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
         ),
+        'WyriHaximus\\TwigView\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wyrihaximus/twig-view/src',
+        ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Webhook\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/korditpteltd/kd-cakephp-webhooks/src',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
@@ -239,6 +265,14 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         array (
             0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
         ),
+        'Restful\\Test\\Fixture\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/korditpteltd/kd-cakephp-restful/tests/Fixture',
+        ),
+        'Restful\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/korditpteltd/kd-cakephp-restful/src',
+        ),
         'Psy\\' => 
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
@@ -271,6 +305,10 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         array (
             0 => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx',
         ),
+        'Page\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/korditpteltd/kd-cakephp-page/src',
+        ),
         'OAuth\\Test\\' => 
         array (
             0 => __DIR__ . '/../..' . '/plugins/OAuth/tests',
@@ -286,6 +324,10 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         'JsonSchema\\' => 
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
+        ),
+        'Jasny\\Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jasny/twig-extensions/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -367,9 +409,9 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         array (
             0 => __DIR__ . '/..' . '/cakephp/bake/src',
         ),
-        'Aura\\Intl\\_Config\\' => 
+        'Aura\\Intl\\' => 
         array (
-            0 => __DIR__ . '/..' . '/aura/intl/config',
+            0 => __DIR__ . '/..' . '/aura/intl/src',
         ),
         'App\\Test\\' => 
         array (
@@ -379,13 +421,35 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'Ajgl\\Twig\\Extension\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src',
+        ),
         'ADmad\\JwtAuth\\' => 
         array (
             0 => __DIR__ . '/..' . '/admad/cakephp-jwt-auth/src',
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/asm89/twig-cache-extension/lib',
+    );
+
     public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'Umpirsky\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/umpirsky/twig-php-function/src',
+            ),
+        ),
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
         'D' => 
         array (
             'Detection' => 
@@ -395,13 +459,9 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         ),
         'A' => 
         array (
-            'Aura\\Intl' => 
+            'Aptoma' => 
             array (
-                0 => __DIR__ . '/..' . '/aura/intl/src',
-            ),
-            'Aura\\Composer\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/aura/installer-default/src',
+                0 => __DIR__ . '/..' . '/aptoma/twig-markdown/src',
             ),
         ),
     );
@@ -840,6 +900,7 @@ class ComposerStaticInit72a01c504b78abcca347330aef43d827
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit72a01c504b78abcca347330aef43d827::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit72a01c504b78abcca347330aef43d827::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit72a01c504b78abcca347330aef43d827::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit72a01c504b78abcca347330aef43d827::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit72a01c504b78abcca347330aef43d827::$classMap;
 
