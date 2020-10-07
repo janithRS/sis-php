@@ -2,6 +2,11 @@
 namespace Institution\Model\Table;
 
 use ArrayObject;
+use Cake\Core\Configure;
+use Cake\Datasource\ResultSetInterface;
+use Cake\Event\Event;
+use Cake\Network\Request;
+use Cake\ORM\Entity;
 use Cake\ORM\Query;
 use Cake\ORM\Entity;
 use Cake\Event\Event;
