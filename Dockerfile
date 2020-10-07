@@ -19,7 +19,9 @@ RUN apt-get update  && apt-get install -y \
         libonig-dev \
         graphviz \
         re2c \
-        file
+        file \
+        zip \
+        unzip \
 
     && docker-php-ext-configure gd \
     && docker-php-ext-install -j$(nproc) gd \
